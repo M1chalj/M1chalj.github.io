@@ -46,16 +46,16 @@
   <div class="post-content">
     <h1><a href="/list">List of all openings</a></h1>
 <h1>Search:</h1>
-<form id="searchform">
-    <input type="text" id="search-input" autofocus/>
+<form id="search-input">
+    <input type="text" autofocus/>
 </form>
-<ul id="searchresults" class="post-list"></ul>
+<ul id="search-output" class="post-list"></ul>
 
 <script src="/assets/js/search.js" type="text/javascript"></script>
 <script>
   var sjs = SimpleJekyllSearch({
-    searchInput: document.getElementById("searchform"),
-    resultsContainer: document.getElementById("searchresults"),
+    searchInput: document.getElementById("search-input"),
+    resultsContainer: document.getElementById("search-output"),
     json: "/search.json",
     noResultsText: 'No results found :(',
     });
