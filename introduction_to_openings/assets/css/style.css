@@ -1,0 +1,68 @@
+@media (max-width: 800px) {
+  #chessboard-image {
+    display: none;
+  }
+  #content #main-content {
+    order: 1;
+  }
+  #content #stats {
+    order: 2;
+  }
+}
+@media (min-width: 800px) {
+  footer:hover {
+    background-color: rgb(63, 61, 61);
+    color: rgb(238, 238, 238);
+  }
+  #content #main-content {
+    order: 2;
+  }
+  #content #stats {
+    order: 1;
+  }
+}
+body {
+  color: rgb(0, 0, 0);
+}
+
+a {
+  color: rgb(127, 189, 98);
+}
+
+strong {
+  color: rgb(197, 122, 10);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+summary:hover {
+  background-color: rgb(63, 61, 61);
+  color: rgb(238, 238, 238);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#upper-header {
+  display: flex;
+}
+
+button {
+  background-color: rgb(222, 238, 153);
+}
+button:hover {
+  background-color: rgb(98.2857142857, 116.5714285714, 19.4285714286);
+}
+
+/*# sourceMappingURL=style.css.map */

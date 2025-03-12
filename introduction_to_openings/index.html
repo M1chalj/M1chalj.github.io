@@ -4,66 +4,86 @@
     <title>Chess</title>
 </head>
 <body>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <header>
-        <a href="https://m1chalj.github.io"><img src="assets/pawn.jpg" width="50" height="50" alt="Pawn"></a>
-        <h1>Welcome to the World of Chess</h1>
-        <p>Your journey to becoming a chess master starts here!</p>
+        <div id="upper-header">
+            <a href="https://m1chalj.github.io"><img src="assets/img/pawn.jpg" width="50" height="50" alt="Pawn"></a>
+            <h1>Welcome to the World of Chess</h1>
+        </div>
+        <div id="lower-header">
+            <p>Your journey to becoming a chess master starts here!</p>
+        </div>
     </header>
 
     <article>
         <h2>Simple chess openings</h2>
-        <table>
-        <caption>Most popular first moves</caption>
-        <thead>
-            <tr>
-                <th scope="col">Move</th>
-                <th scope="col">Name of opening</th>
-                <th scope="col">Ideas</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>e4</td>
-                <td>King's Pawn</td>
-                <td>Controls center, frees pieces</td>
-            </tr>
-            <tr>
-                <td>d4</td>
-                <td>Queen's Pawn</td>
-                <td>Solid, central control</td>
-            </tr>
-            <tr>
-                <td>Nf3</td>
-                <td>R&eacute;ti</td>
-                <td>Flexible, avoids early commitment</td>
-            </tr>
-            <tr>
-                <td>c4</td>
-                <td>English</td>
-                <td>Flank control, positional</td>
-            </tr>
-            <tr>
-                <td>g3</td>
-                <td>King's Fianchetto</td>
-                <td>Prepares bishop development</td>
-            </tr>
-        </tbody>
-    </table>
+        <div id="content">
+            <div id="stats">
+                <table>
+                    <caption>Most popular first moves</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Move</th>
+                            <th scope="col">Name of opening</th>
+                            <th scope="col">Ideas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>e4</td>
+                            <td>King's Pawn</td>
+                            <td>Controls center, frees pieces</td>
+                        </tr>
+                        <tr>
+                            <td>d4</td>
+                            <td>Queen's Pawn</td>
+                            <td>Solid, central control</td>
+                        </tr>
+                        <tr>
+                            <td>Nf3</td>
+                            <td>R&eacute;ti</td>
+                            <td>Flexible, avoids early commitment</td>
+                        </tr>
+                        <tr>
+                            <td>c4</td>
+                            <td>English</td>
+                            <td>Flank control, positional</td>
+                        </tr>
+                        <tr>
+                            <td>g3</td>
+                            <td>King's Fianchetto</td>
+                            <td>Prepares bishop development</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <div class="list-with-title">
+                    <h3>List of weak first moves: </h3>
+                    <ol type="I">
+                        <li>f3 - Barnes Opening</li>
+                        <li>h4 - Desprez Opening</li>
+                        <li>a4 - Ware Opening</li>
+                        <li>g4 - Grob Attack</li>
+                        <li>Nh3 - Amar Opening</li>
+                    </ol>
+                </div>
+            </div>
+            <div id="main-content">
+                <h3>Master the Opening Moves: Your Key to a Winning Game</h3>
+                <p>The opening phase in chess sets the stage for the entire game. A good opening helps control the center, develop pieces efficiently, and ensure king safety.</p>
+                <p>The most popular openings include <strong>e4</strong> <em>(King's Pawn Opening)</em> and <strong>d4</strong> <em>(Queen's Pawn Opening)</em>, both aiming for strong central control. More positional players may prefer <strong>c4</strong> <em>(English Opening)</em> or <strong>Nf3</strong> <em>(R&eacute;ti Opening)</em>, allowing for flexibility.</p>
+                <p>On the flip side, weak moves like <strong>f3</strong> or <strong>h4</strong> leave the king exposed and waste valuable time. Choosing a solid opening can give you an immediate edge and set you up for success in the middlegame.</p>    
+                <p>Visit <a href="https://m1chalj.github.io/list">this page</a> to learn about openings</p>
+            </div>
+        </div>
+        
 
-        <h3>List of weak first moves: </h3>
-        <ol type="I">
-            <li>f3 - Barnes Opening</li>
-            <li>h4 - Desprez Opening</li>
-            <li>a4 - Ware Opening</li>
-            <li>g4 - Grob Attack</li>
-            <li>Nh3 - Amar Opening</li>
-        </ol>
-        <h3>Master the Opening Moves: Your Key to a Winning Game</h3>
-        <p>The opening phase in chess sets the stage for the entire game. A good opening helps control the center, develop pieces efficiently, and ensure king safety.</p>
-        <p>The most popular openings include <strong>e4</strong> <em>(King's Pawn Opening)</em> and <strong>d4</strong> <em>(Queen's Pawn Opening)</em>, both aiming for strong central control. More positional players may prefer <strong>c4</strong> <em>(English Opening)</em> or <strong>Nf3</strong> <em>(R&eacute;ti Opening)</em>, allowing for flexibility.</p>
-        <p>On the flip side, weak moves like <strong>f3</strong> or <strong>h4</strong> leave the king exposed and waste valuable time. Choosing a solid opening can give you an immediate edge and set you up for success in the middlegame.</p>
-        <h3>Chess board</h3>
-        <img src="assets/chessboard.png" alt="Chess board" width="360" height="360" usemap="#chessboard-map">
+        
+        <div id="chessboard-image">
+            <h3>Chess board</h3>
+            <img src="assets/img/chessboard.png" alt="Chess board" width="360" height="360" usemap="#chessboard-map">
+        </div>
+        
         <map name="chessboard-map">
             <!--Black pieces-->
             <area shape="rect" coords="0,0,45,45" alt="A1" href="https://en.wikipedia.org/wiki/Rook_(chess)">

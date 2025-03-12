@@ -1,0 +1,89 @@
+$background-hover-color: rgb(63, 61, 61);
+$background-hover-text-color: rgb(238, 238, 238);
+
+$link-color: rgb(127, 189, 98);
+$text-default: rgb(0, 0, 0);
+$text-strong: rgb(197, 122, 10);
+
+$button-background: rgb(222, 238, 153);
+
+@mixin hover-react {
+    background-color: $background-hover-color;
+    color: $background-hover-text-color
+}
+
+@media (max-width: 800px) {
+    #chessboard-image {
+        display: none;
+    }
+
+    #content {
+        #main-content {
+            order: 1;
+        }
+    
+        #stats {
+            order: 2;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    footer:hover {
+        @include hover-react();
+    }
+
+    #content {
+        #main-content {
+            order: 2;
+        }
+    
+        #stats {
+            order: 1;
+        }
+    }
+}
+
+body {
+    color: $text-default
+}
+
+a {
+    color: $link-color;
+}
+
+strong {
+    color: $text-strong;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#stats {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+summary:hover {
+    @include hover-react();
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#upper-header {
+    display: flex;
+}
+
+button {
+    background-color: $button-background;
+    &:hover {
+        background-color: darken($button-background, 50%);
+    }
+}
