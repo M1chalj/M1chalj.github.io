@@ -10,9 +10,9 @@
   }
 }
 @media (min-width: 800px) {
-  footer:hover {
-    background-color: rgb(63, 61, 61);
-    color: rgb(238, 238, 238);
+  footer #disclaimer:hover {
+    background-color: rgb(147, 207, 139);
+    color: rgb(49, 77, 45);
   }
   #content #main-content {
     order: 2;
@@ -21,12 +21,17 @@
     order: 1;
   }
 }
+#chessboard-image {
+  text-align: center;
+}
+
 body {
   color: rgb(0, 0, 0);
+  background-color: rgba(147, 207, 139, 0.322);
 }
 
 a {
-  color: rgb(127, 189, 98);
+  color: rgb(167, 36, 112);
 }
 
 strong {
@@ -44,18 +49,65 @@ strong {
 }
 
 summary:hover {
-  background-color: rgb(63, 61, 61);
-  color: rgb(238, 238, 238);
+  background-color: rgb(147, 207, 139);
+  color: rgb(49, 77, 45);
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(109, 192, 98, 0.3);
+}
+footer #enrollment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer #enrollment-form * {
+  margin-inline: auto;
+}
+footer #enrollment-form h4 {
+  margin-bottom: 0px;
+}
+footer #disclaimer {
   display: flex;
   justify-content: center;
   gap: 50px;
 }
 
-#upper-header {
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+  border-collapse: collapse;
+}
+table caption {
+  font-size: large;
+  font-weight: bold;
+}
+
+header {
   display: flex;
+  background-color: rgb(109, 192, 98);
+  padding: 15px;
+  border-radius: 15px;
+}
+header #logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header #title {
+  display: flex;
+  flex-direction: column;
+}
+header #title h1 {
+  margin: 0px;
+}
+header #title p {
+  margin: 0px;
 }
 
 button {

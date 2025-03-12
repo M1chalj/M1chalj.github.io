@@ -1,7 +1,14 @@
-$background-hover-color: rgb(63, 61, 61);
-$background-hover-text-color: rgb(238, 238, 238);
+@use "sass:color";
 
-$link-color: rgb(127, 189, 98);
+$background-hover-color: rgb(147, 207, 139);
+$background-hover-text-color: rgb(49, 77, 45);
+
+$header-bcgclr: rgb(109, 192, 98);
+$background-color: rgba(147, 207, 139, 0.322);
+
+$footer-background-color: rgba(109, 192, 98, 0.3);
+
+$link-color: rgb(167, 36, 112);
 $text-default: rgb(0, 0, 0);
 $text-strong: rgb(197, 122, 10);
 
@@ -29,8 +36,10 @@ $button-background: rgb(222, 238, 153);
 }
 
 @media (min-width: 800px) {
-    footer:hover {
-        @include hover-react();
+    footer {
+        #disclaimer:hover {
+            @include hover-react();
+        }
     }
 
     #content {
@@ -44,8 +53,13 @@ $button-background: rgb(222, 238, 153);
     }
 }
 
+#chessboard-image {
+    text-align: center;
+}
+
 body {
-    color: $text-default
+    color: $text-default;
+    background-color: $background-color;
 }
 
 a {
@@ -61,7 +75,6 @@ strong {
     flex-direction: column;
 }
 
-
 #stats {
     display: flex;
     justify-content: space-evenly;
@@ -73,17 +86,71 @@ summary:hover {
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 50px;
+
+    background-color: $footer-background-color;
+
+    #enrollment-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        * {
+            margin-inline: auto;
+        }
+        h4 {
+            margin-bottom: 0px;
+        }
+    }
+
+    #disclaimer {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
 }
 
-#upper-header {
+table, th, td {
+    border: 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+
+    caption {
+        font-size: large;
+        font-weight: bold;
+    }
+}
+
+header {
     display: flex;
+    background-color: $header-bcgclr;
+    padding: 15px;
+    border-radius: 15px;
+
+    #logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #title {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            margin: 0px;
+        }
+        p {
+            margin: 0px;
+        }
+    }
 }
 
 button {
     background-color: $button-background;
     &:hover {
-        background-color: darken($button-background, 50%);
+        background-color: color.adjust($button-background, $lightness: -50%)
     }
 }
