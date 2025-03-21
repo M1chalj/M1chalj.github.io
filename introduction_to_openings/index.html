@@ -3,152 +3,156 @@
 <head>
     <title>Chess</title>
 </head>
-<body class="bg-[#93cf8b52]">
+<body class="bg-[#6DC062]">
     <link rel="stylesheet" type="text/css" href="assets/css/output.css">
-    <header class="flex flex-row justify-left bg-[#6DC062] rounded-t rounded-2xl p-7">
-        <a id="logo" class="flex flex-col justify-center" href="https://m1chalj.github.io"><img src="assets/img/pawn.png" width="75" height="75" alt="Pawn"></a>
-        <div id="title" class="flex flex-col">
-            <h1 class="text-5xl font-bold font-serif">Welcome to the World of Chess</h1>
-            <p class="flex flex-row justify-center text">Your journey to becoming a chess master starts here!</p>
+    <header class="bg-[#dcf0da] sticky top-0">
+        <div class="flex flex-row justify-left bg-[#6DC062] rounded-br-4xl p-7">
+            <a id="logo" class="flex flex-col justify-center" href="https://m1chalj.github.io"><img src="assets/img/pawn.png" width="75" height="75" alt="Pawn"></a>
+            <div id="title" class="flex flex-col">
+                <h1 class="text-5xl font-bold font-serif">Welcome to the World of Chess</h1>
+                <p class="flex flex-row justify-center text">Your journey to becoming a chess master starts here!</p>
+            </div>
         </div>
     </header>
-
-    <article class="flex flex-col justify-center p-20">
-        <h2 class="text-3xl font-semibold mb-5">Simple chess openings</h2>
-        <div id="content">
-            <div id="stats" class="flex flex-row justify-evenly p-2 mb-10">
-                <table class="table-auto border-3 caption-bottom mr-5">
-                    <caption class="italic text-[#749d7b]">Most popular first moves</caption>
-                    <thead>
-                        <tr class="bg-[#93cf8bfa] border-3">
-                            <th scope="col" class="border">Move</th>
-                            <th scope="col" class="border">Name of opening</th>
-                            <th scope="col" class="border">Ideas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="border">e4</td>
-                            <td class="border">King's Pawn</td>
-                            <td class="border">Controls center, frees pieces</td>
-                        </tr>
-                        <tr class="bg-[#93cf8bda]">
-                            <td class="border">d4</td>
-                            <td class="border">Queen's Pawn</td>
-                            <td class="border">Solid, central control</td>
-                        </tr>
-                        <tr>
-                            <td class="border">Nf3</td>
-                            <td class="border">R&eacute;ti</td>
-                            <td class="border">Flexible, avoids early commitment</td>
-                        </tr>
-                        <tr class="bg-[#93cf8bda]">
-                            <td class="border">c4</td>
-                            <td class="border">English</td>
-                            <td class="border">Flank control, positional</td>
-                        </tr>
-                        <tr>
-                            <td class="border">g3</td>
-                            <td class="border">King's Fianchetto</td>
-                            <td class="border">Prepares bishop development</td>
-                        </tr>
-                    </tbody>
-                </table>
-    
-                <div class="list-with-title">
-                    <h3 class="italic underline">List of weak first moves: </h3>
-                    <ol type="I">
-                        <li><strong>f3</strong> - Barnes Opening</li>
-                        <li><strong>h4</strong> - Desprez Opening</li>
-                        <li><strong>a4</strong> - Ware Opening</li>
-                        <li><strong>g4</strong> - Grob Attack</li>
-                        <li><strong>Nh3</strong> - Amar Opening</li>
-                    </ol>
+    <article class="flex flex-row ">
+        <div id="left-part" class="w-40 flex-none bg-[#6DC062]">
+            LEFT PART
+        </div>
+        <div id="mid-part" class="flex-auto flex flex-col justify-center p-5 rounded-tl-4xl bg-[#dcf0da]">
+            <h2 class="text-3xl font-semibold mb-5">Simple chess openings</h2>
+            <div id="content">
+                <div id="stats" class="flex flex-row justify-evenly p-2 mb-10">
+                    <table class="table-auto border-3 caption-bottom mr-5">
+                        <caption class="italic text-[#749d7b]">Most popular first moves</caption>
+                        <thead>
+                            <tr class="bg-[#93cf8bfa] border-3">
+                                <th scope="col" class="border">Move</th>
+                                <th scope="col" class="border">Name of opening</th>
+                                <th scope="col" class="border">Ideas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border">e4</td>
+                                <td class="border">King's Pawn</td>
+                                <td class="border">Controls center, frees pieces</td>
+                            </tr>
+                            <tr class="bg-[#93cf8bda]">
+                                <td class="border">d4</td>
+                                <td class="border">Queen's Pawn</td>
+                                <td class="border">Solid, central control</td>
+                            </tr>
+                            <tr>
+                                <td class="border">Nf3</td>
+                                <td class="border">R&eacute;ti</td>
+                                <td class="border">Flexible, avoids early commitment</td>
+                            </tr>
+                            <tr class="bg-[#93cf8bda]">
+                                <td class="border">c4</td>
+                                <td class="border">English</td>
+                                <td class="border">Flank control, positional</td>
+                            </tr>
+                            <tr>
+                                <td class="border">g3</td>
+                                <td class="border">King's Fianchetto</td>
+                                <td class="border">Prepares bishop development</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="list-with-title">
+                        <h3 class="italic underline">List of weak first moves: </h3>
+                        <ol type="I">
+                            <li><strong>f3</strong> - Barnes Opening</li>
+                            <li><strong>h4</strong> - Desprez Opening</li>
+                            <li><strong>a4</strong> - Ware Opening</li>
+                            <li><strong>g4</strong> - Grob Attack</li>
+                            <li><strong>Nh3</strong> - Amar Opening</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="main-content" class="mb-15">
+                    <h3 class="text-2xl mb-2">Master the Opening Moves: Your Key to a Winning Game</h3>
+                    <p class="mb-3">The opening phase in chess sets the stage for the entire game, laying the foundation for both short-term tactics and long-term strategy. A well-executed opening helps control the center of the board, which is crucial for piece mobility and strategic dominance. By occupying key central squares, such as e4, d4, e5, and d5, players can exert influence over the board and facilitate smoother piece development. Efficient development of minor pieces—knights and bishops—is another fundamental goal of the opening, allowing for quicker coordination and preparing for potential attacks or defensive structures. Additionally, ensuring the king's safety, typically through castling, is an essential principle, as an exposed king can become an easy target for early aggression. Players who follow these principles generally enter the middlegame with a more stable and promising position.</p>
+                    <p class="mb-3">There are numerous opening choices in chess, each catering to different playing styles. The most popular and widely played openings include <strong>1.e4</strong>—the <em>King's Pawn Opening</em>—and <strong>1.d4</strong>—the <em>Queen's Pawn Opening</em>—both of which aim for strong central control and rapid piece development. The <em>King's Pawn Opening</em> often leads to dynamic, tactical positions, making it a favorite among aggressive players. It paves the way for openings such as the Ruy-Lopez, Sicilian Defense, and Italian Game, which have been studied extensively for centuries. The <em>Queen's Pawn Opening</em>, on the other hand, generally results in more strategic and positional battles, offering solid setups like the Queen's Gambit, King's Indian Defense, and Grünfeld Defense. More positionally inclined players may opt for <strong>1.c4</strong>, known as the <em>English Opening</em>, which focuses on gradual central control and flexible development. Similarly, <strong>1.Nf3</strong>, the <em>Reti Opening</em>, allows for transpositional possibilities, giving players the freedom to steer the game into different types of positions based on their opponent's responses. These openings provide strong and well-tested paths to achieving a stable and advantageous position early in the game.</p>
+                    <p class="mb-3">Conversely, making weak opening moves can lead to immediate disadvantages. Moves like <strong>f3</strong> or <strong>h4</strong>, while sometimes used in surprise attacks, are generally considered weak in standard play because they fail to contribute to central control and leave the king exposed. Playing <strong>f3</strong> early in the game weakens the e1-h4 diagonal, making it vulnerable to checks and attacks, while <strong>h4</strong> does little to assist in development and can waste valuable time that could be spent mobilizing key pieces. In contrast, a strong opening provides a solid foundation for the middlegame, allowing for better tactical opportunities, piece activity, and strategic planning. By choosing a well-established opening and following fundamental principles, players can gain an immediate edge, setting themselves up for a more successful and controlled game.</p>
+                    <p class="mb-3">Visit <a class="text-orange-400" href="https://m1chalj.github.io/list">this page</a> to learn about openings</p>
+            
                 </div>
             </div>
-            <div id="main-content" class="mb-15">
-                <h3 class="text-2xl mb-2">Master the Opening Moves: Your Key to a Winning Game</h3>
-                <p class="mb-3">The opening phase in chess sets the stage for the entire game, laying the foundation for both short-term tactics and long-term strategy. A well-executed opening helps control the center of the board, which is crucial for piece mobility and strategic dominance. By occupying key central squares, such as e4, d4, e5, and d5, players can exert influence over the board and facilitate smoother piece development. Efficient development of minor pieces—knights and bishops—is another fundamental goal of the opening, allowing for quicker coordination and preparing for potential attacks or defensive structures. Additionally, ensuring the king's safety, typically through castling, is an essential principle, as an exposed king can become an easy target for early aggression. Players who follow these principles generally enter the middlegame with a more stable and promising position.</p>
-                <p class="mb-3">There are numerous opening choices in chess, each catering to different playing styles. The most popular and widely played openings include <strong>1.e4</strong>—the <em>King's Pawn Opening</em>—and <strong>1.d4</strong>—the <em>Queen's Pawn Opening</em>—both of which aim for strong central control and rapid piece development. The <em>King's Pawn Opening</em> often leads to dynamic, tactical positions, making it a favorite among aggressive players. It paves the way for openings such as the Ruy-Lopez, Sicilian Defense, and Italian Game, which have been studied extensively for centuries. The <em>Queen's Pawn Opening</em>, on the other hand, generally results in more strategic and positional battles, offering solid setups like the Queen's Gambit, King's Indian Defense, and Grünfeld Defense. More positionally inclined players may opt for <strong>1.c4</strong>, known as the <em>English Opening</em>, which focuses on gradual central control and flexible development. Similarly, <strong>1.Nf3</strong>, the <em>Reti Opening</em>, allows for transpositional possibilities, giving players the freedom to steer the game into different types of positions based on their opponent's responses. These openings provide strong and well-tested paths to achieving a stable and advantageous position early in the game.</p>
-                <p class="mb-3">Conversely, making weak opening moves can lead to immediate disadvantages. Moves like <strong>f3</strong> or <strong>h4</strong>, while sometimes used in surprise attacks, are generally considered weak in standard play because they fail to contribute to central control and leave the king exposed. Playing <strong>f3</strong> early in the game weakens the e1-h4 diagonal, making it vulnerable to checks and attacks, while <strong>h4</strong> does little to assist in development and can waste valuable time that could be spent mobilizing key pieces. In contrast, a strong opening provides a solid foundation for the middlegame, allowing for better tactical opportunities, piece activity, and strategic planning. By choosing a well-established opening and following fundamental principles, players can gain an immediate edge, setting themselves up for a more successful and controlled game.</p>
-                <p class="mb-3">Visit <a class="text-orange-400" href="https://m1chalj.github.io/list">this page</a> to learn about openings</p>
+            <div id="chessboard-image" class="flex flex-col items-center">
+                <h3 class="text-2xl">Chess board</h3>
+                <img src="assets/img/chessboard.png" class="shadow-2xl shadow-emerald-500" alt="Chess board" width="720" height="720" usemap="#chessboard-map">
+            </div>
+            <map name="chessboard-map" >
+                <!--Black pieces-->
+                <area shape="rect" coords="0,0,90,90" alt="A1" href="https://en.wikipedia.org/wiki/Rook_(chess)">
+                <area shape="rect" coords="90,0,180,90" alt="B1" href="https://en.wikipedia.org/wiki/Knight_(chess)">
+                <area shape="rect" coords="180,0,270,90" alt="C1" href="https://en.wikipedia.org/wiki/Bishop_(chess)">
+                <area shape="rect" coords="270,0,360,90" alt="D1" href="https://en.wikipedia.org/wiki/Queen_(chess)">
+                <area shape="rect" coords="360,0,450,90" alt="E1" href="https://en.wikipedia.org/wiki/King_(chess)">
+                <area shape="rect" coords="450,0,540,90" alt="F1" href="https://en.wikipedia.org/wiki/Bishop_(chess)">
+                <area shape="rect" coords="540,0,630,90" alt="G1" href="https://en.wikipedia.org/wiki/Knight_(chess)">
+                <area shape="rect" coords="630,0,720,90" alt="H1" href="https://en.wikipedia.org/wiki/Rook_(chess)">
+                <area shape="rect" coords="0,90,720,180" alt="2nd row" href="https://en.wikipedia.org/wiki/Pawn_(chess)">
+                <!--White pieces-->
+                <area shape="rect" coords="0,630,90,720" alt="A8" href="https://en.wikipedia.org/wiki/Rook_(chess)">
+                <area shape="rect" coords="90,630,180,720" alt="B8" href="https://en.wikipedia.org/wiki/Knight_(chess)">
+                <area shape="rect" coords="180,630,270,720" alt="C8" href="https://en.wikipedia.org/wiki/Bishop_(chess)">
+                <area shape="rect" coords="270,630,360,720" alt="D8" href="https://en.wikipedia.org/wiki/Queen_(chess)">
+                <area shape="rect" coords="360,630,450,720" alt="E8" href="https://en.wikipedia.org/wiki/King_(chess)">
+                <area shape="rect" coords="450,630,540,720" alt="F8" href="https://en.wikipedia.org/wiki/Bishop_(chess)">
+                <area shape="rect" coords="540,630,630,720" alt="G8" href="https://en.wikipedia.org/wiki/Knight_(chess)">
+                <area shape="rect" coords="630,630,720,720" alt="H8" href="https://en.wikipedia.org/wiki/Rook_(chess)">
+                <area shape="rect" coords="0,540,720,630" alt="7th row" href="https://en.wikipedia.org/wiki/Pawn_(chess)">
+            </map>
+        </div>
+        <div id="right-part" class="w-100 flex-none p-5 bg-[#dcf0da] border-l-5 border-l-[#6DC062] border-dotted">
+            <div id="enrollment-form" class="sticky top-50 flex flex-col items-center">
+                <h3 class="font-bold text-xl mb-3">Become Part of Our Chess Family</h3>
+                <details class="mb-5">
+                    <summary>See why</summary>
+                    <p class="mb-3">Whether you're just learning how the pieces move or you're a seasoned tournament competitor, <strong>our chess club is the perfect place for you!</strong> We welcome players of all levels and create an environment where everyone can <strong>learn, compete, and have fun.</strong></p>
+                    <ul>
+                        <li class="mb-1">Beginners: Learn the fundamentals with guided lessons, friendly games, and patient coaching.</li>
+                        <li class="mb-1">Intermediate Players: Improve your tactics, strategies, and openings through engaging challenges and competitive play.</li>
+                        <li class="mb-3">Advanced Players: Test your skills against strong opponents, analyze games, and participate in tournaments.</li>
+                    </ul>
+                    <p>With <strong> regular events, coaching sessions, and a supportive community</strong>, our club is the best place to <strong>grow your chess skills</strong> while enjoying the game. Come join us and <strong>make your next move the best one yet!</strong></p>
+                </details>
+                <form class="flex flex-col items-center">
+                    <input type="text" placeholder="Enter your name" class="border bg-amber-50 mb-3">
+                    <input type="text" placeholder="Enter your email" class="border bg-amber-50 mb-3">
+                    <select name="level" class="border bg-amber-50 mb-3">
+                        <option value="" disabled selected>Select your level</option>
+                        <optgroup label="Beginner">
+                            <option>Pawn Learner (new to chess)</option>
+                            <option>Knight in Training (knows basics)</option>
+                        </optgroup>
+                        <optgroup label="Intermediate">
+                            <option>Bishop Tactician (understands tactics)</option>
+                            <option>Rook Strategist (plays club games)</option>
+                        </optgroup>
+                        <optgroup label="Advanced">
+                            <option>Queen (plays tournaments)</option>
+                            <option>King (rated 2000+)</option>
+                        </optgroup>
+                    </select>
+                    <span class="relative w-10 h-10 mb-3">
+                        <span class="absolute h-10 w-10 rounded-full animate-ping bg-amber-900 opacity-70"></span>
+                        <button type="submit" class="relative h-10 w-10 border bg-amber-50 rounded-full p-1">Join</button>   
+                    </span>
+                </form>
+                <div class="flex flex-row">
+                    <h4 class="mr-2">Available spots:</h4>     
+                    <progress value="75" max="100" class="mb-5"></progress>    
+    
+                </div>
             </div>
         </div>
-        
-
-        
-        <div id="chessboard-image" class="flex flex-col items-center">
-            <h3 class="text-2xl">Chess board</h3>
-            <img src="assets/img/chessboard.png" class="shadow-2xl shadow-emerald-500" alt="Chess board" width="720" height="720" usemap="#chessboard-map">
-        </div>
-        
-        <map name="chessboard-map" >
-            <!--Black pieces-->
-            <area shape="rect" coords="0,0,90,90" alt="A1" href="https://en.wikipedia.org/wiki/Rook_(chess)">
-            <area shape="rect" coords="90,0,180,90" alt="B1" href="https://en.wikipedia.org/wiki/Knight_(chess)">
-            <area shape="rect" coords="180,0,270,90" alt="C1" href="https://en.wikipedia.org/wiki/Bishop_(chess)">
-            <area shape="rect" coords="270,0,360,90" alt="D1" href="https://en.wikipedia.org/wiki/Queen_(chess)">
-            <area shape="rect" coords="360,0,450,90" alt="E1" href="https://en.wikipedia.org/wiki/King_(chess)">
-            <area shape="rect" coords="450,0,540,90" alt="F1" href="https://en.wikipedia.org/wiki/Bishop_(chess)">
-            <area shape="rect" coords="540,0,630,90" alt="G1" href="https://en.wikipedia.org/wiki/Knight_(chess)">
-            <area shape="rect" coords="630,0,720,90" alt="H1" href="https://en.wikipedia.org/wiki/Rook_(chess)">
-            <area shape="rect" coords="0,90,720,180" alt="2nd row" href="https://en.wikipedia.org/wiki/Pawn_(chess)">
-            <!--White pieces-->
-            <area shape="rect" coords="0,630,90,720" alt="A8" href="https://en.wikipedia.org/wiki/Rook_(chess)">
-            <area shape="rect" coords="90,630,180,720" alt="B8" href="https://en.wikipedia.org/wiki/Knight_(chess)">
-            <area shape="rect" coords="180,630,270,720" alt="C8" href="https://en.wikipedia.org/wiki/Bishop_(chess)">
-            <area shape="rect" coords="270,630,360,720" alt="D8" href="https://en.wikipedia.org/wiki/Queen_(chess)">
-            <area shape="rect" coords="360,630,450,720" alt="E8" href="https://en.wikipedia.org/wiki/King_(chess)">
-            <area shape="rect" coords="450,630,540,720" alt="F8" href="https://en.wikipedia.org/wiki/Bishop_(chess)">
-            <area shape="rect" coords="540,630,630,720" alt="G8" href="https://en.wikipedia.org/wiki/Knight_(chess)">
-            <area shape="rect" coords="630,630,720,720" alt="H8" href="https://en.wikipedia.org/wiki/Rook_(chess)">
-            <area shape="rect" coords="0,540,720,630" alt="7th row" href="https://en.wikipedia.org/wiki/Pawn_(chess)">
-        </map>
-
-        
     </article>
-    <footer class="flex flex-col items-center pr-20 pl-20">
-        <div id="enrollment-form" class="flex flex-col items-center">
-            <h3 class="font-bold text-xl mb-3">Become Part of Our Chess Family</h3>
-            <details class="mb-5">
-                <summary>See why</summary>
-                <p class="mb-3">Whether you're just learning how the pieces move or you're a seasoned tournament competitor, <strong>our chess club is the perfect place for you!</strong> We welcome players of all levels and create an environment where everyone can <strong>learn, compete, and have fun.</strong></p>
-                <ul>
-                    <li class="mb-1">Beginners: Learn the fundamentals with guided lessons, friendly games, and patient coaching.</li>
-                    <li class="mb-1">Intermediate Players: Improve your tactics, strategies, and openings through engaging challenges and competitive play.</li>
-                    <li class="mb-3">Advanced Players: Test your skills against strong opponents, analyze games, and participate in tournaments.</li>
-                </ul>
-                <p>With <strong> regular events, coaching sessions, and a supportive community</strong>, our club is the best place to <strong>grow your chess skills</strong> while enjoying the game. Come join us and <strong>make your next move the best one yet!</strong></p>
-            </details>
-            <form>
-                <input type="text" placeholder="Enter your name" class="border bg-amber-50">
-                <input type="text" placeholder="Enter your email" class="border bg-amber-50">
-                <select name="level" class="border bg-amber-50">
-                    <option value="" disabled selected>Select your level</option>
-                    <optgroup label="Beginner">
-                        <option>Pawn Learner (new to chess)</option>
-                        <option>Knight in Training (knows basics)</option>
-                    </optgroup>
-                    <optgroup label="Intermediate">
-                        <option>Bishop Tactician (understands tactics)</option>
-                        <option>Rook Strategist (plays club games)</option>
-                    </optgroup>
-                    <optgroup label="Advanced">
-                        <option>Queen (plays tournaments)</option>
-                        <option>King (rated 2000+)</option>
-                    </optgroup>
-                </select>
-                <button type="submit" class="border bg-amber-50 rounded-full p-1">Join</button>
-            </form>
-            <div class="flex flex-row">
-                <h4 class="mr-2">Available spots: </h4>
-                <progress value="75" max="100" class="mb-5"></progress>    
-            </div>
-        </div>
-        <div id="disclaimer" class="flex flex-row bg-[#6DC062]">
-            <p class="m-2">This website was created as part of an assignment for the WWW APS course. The information provided may not be accurate, and some content has been generated with AI.</p>
-            <p class="m-2">Micha&#322; Januszkiewicz</p>    
-        </div>
+    <footer class="flex flex-row items-center pr-20 pl-20 bg-[#6DC062]">
+        <p class="m-2">This website was created as part of an assignment for the WWW APS course. The information provided may not be accurate, and some content has been generated with AI.</p>
+        <p class="m-2">Micha&#322; Januszkiewicz</p>    
     </footer>
 </body>
 </html>
