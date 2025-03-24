@@ -1,86 +1,82 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-    <title>Chess</title>
-</head>
-<body class="bg-[#6DC062] flex flex-col">
-    <link rel="stylesheet" type="text/css" href="../assets/css/output.css">
-    <header class="bg-[#dcf0da] sticky top-0 select-none">
-        <div class="flex flex-row justify-left bg-[#6DC062] rounded-br-4xl p-7">
-            <a id="logo" class="flex-none flex flex-col justify-center" href="../index.html"><img src="../assets/img/pawn.png" width="75" height="75" alt="Pawn"></a>
-            <div id="title" class="flex-auto flex flex-col">
-                <h1 class="text-5xl font-bold font-serif">Welcome to the World of Chess</h1>
-                <p class="flex flex-row justify-left text ml-10">Your journey to becoming a chess master starts here!</p>
-            </div>
-            <div id="menu" class="flex-none flex flex-row justify-center gap-4 items-center">
-                <a href="./index.html" class="flex flex-col justify-center menu-btn">About</a>
-                <a href="https://m1chalj.github.io/" class="flex flex-col justify-center menu-btn">Main page</a>
-                <a href="https://chess.com/" class="flex flex-col justify-center menu-btn">Play chess!</a>
-            </div>
-        </div>
-    </header>
-    <article class="min-h-180 flex flex-row">
-        <div id="left-part" class="w-40 flex-none bg-[#6DC062]">
-            <div id="menu" class="sticky top-50 flex-none flex flex-col justify-center gap-4 items-center">
-                <h2 class="text-2xl font-bold">Menu:</h2>
-                <a href="./index.html" class="flex flex-row justify-center menu-btn">About</a>
-                <a href="https://m1chalj.github.io/" class="flex flex-row justify-center menu-btn">Main page</a>
-                <a href="https://chess.com/" class="flex flex-row justify-center menu-btn">Play chess!</a>
-            </div>
-        </div>
-        <div id="mid-part" class="flex-auto p-5 rounded-tl-4xl bg-[#dcf0da]">
-            <h2 class="text-2xl font-bold mb-3">About</h2>
-            <p class="mb-3">This page is solution to second assignment for WWW apps course. It presents use of tailwind to generate css.</p>
-            <p class="mb-3">The project focuses on applying Tailwind's utility-first approach to style a webpage, demonstrating various features such as text and background colors, box shadows, animations, and table styling. Additionally, it explores responsive design techniques using flexbox utilities </p>
-            <p class="mb-3">Through this assignment, we aim to showcase how Tailwind CSS simplifies frontend development while maintaining flexibility and performance.</p>
-        </div>
-        <div id="right-part" class="w-100 flex-none p-5 bg-[#dcf0da] border-l-5 border-l-[#6DC062] border-dotted">
-            <div id="enrollment-form" class="sticky top-50 flex flex-col items-center z-1 max-h-[75vh] overflow-auto">
-                <h3 class="font-bold text-xl mb-3">Become Part of Our Chess Family</h3>
-                <details class="mb-5">
-                    <summary class="hover:bg-[#c0e2bd] p-1">See why</summary>
-                    <p class="mb-3">Whether you're just learning how the pieces move or you're a seasoned tournament competitor, <strong>our chess club is the perfect place for you!</strong> We welcome players of all levels and create an environment where everyone can <strong>learn, compete, and have fun.</strong></p>
-                    <ul>
-                        <li class="mb-1">Beginners: Learn the fundamentals with guided lessons, friendly games, and patient coaching.</li>
-                        <li class="mb-1">Intermediate Players: Improve your tactics, strategies, and openings through engaging challenges and competitive play.</li>
-                        <li class="mb-3">Advanced Players: Test your skills against strong opponents, analyze games, and participate in tournaments.</li>
-                    </ul>
-                    <p>With <strong> regular events, coaching sessions, and a supportive community</strong>, our club is the best place to <strong>grow your chess skills</strong> while enjoying the game. Come join us and <strong>make your next move the best one yet!</strong></p>
-                </details>
-                <form class="flex flex-col items-center">
-                    <input type="text" placeholder="Enter your name" class="border bg-amber-50 mb-3">
-                    <input type="text" placeholder="Enter your email" class="border bg-amber-50 mb-3">
-                    <select name="level" class="border bg-amber-50 mb-3">
-                        <option value="" disabled selected>Select your level</option>
-                        <optgroup label="Beginner">
-                            <option>Pawn Learner (new to chess)</option>
-                            <option>Knight in Training (knows basics)</option>
-                        </optgroup>
-                        <optgroup label="Intermediate">
-                            <option>Bishop Tactician (understands tactics)</option>
-                            <option>Rook Strategist (plays club games)</option>
-                        </optgroup>
-                        <optgroup label="Advanced">
-                            <option>Queen (plays tournaments)</option>
-                            <option>King (rated 2000+)</option>
-                        </optgroup>
-                    </select>
-                    <span class="relative w-10 h-10 mb-3">
-                        <span class="absolute h-10 w-10 rounded-full animate-ping bg-amber-900 opacity-70"></span>
-                        <button type="submit" class="relative h-10 w-10 border bg-amber-50 rounded-full p-1 hover:bg-amber-100 cursor-pointer">Join</button>   
-                    </span>
-                </form>
-                <div class="flex flex-row">
-                    <h4 class="mr-2">Available spots:</h4>     
-                    <progress value="75" max="100" class="mb-5"></progress>    
-    
-                </div>
-            </div>
-        </div>
-    </article>
-    <footer class="flex flex-row items-center pr-20 pl-20 bg-[#6DC062]">
-        <p class="m-2">This website was created as part of an assignment for the WWW APS course. The information provided may not be accurate, and some content has been generated with AI.</p>
-        <p class="m-2">Micha&#322; Januszkiewicz</p>    
-    </footer>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>About | Chess openings</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="About" />
+<meta name="author" content="Michał Januszkiewicz" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This page is the solution to the first assignment for the WWW apps course." />
+<meta property="og:description" content="This page is the solution to the first assignment for the WWW apps course." />
+<link rel="canonical" href="http://localhost:4000/about/" />
+<meta property="og:url" content="http://localhost:4000/about/" />
+<meta property="og:site_name" content="Chess openings" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Michał Januszkiewicz"},"description":"This page is the solution to the first assignment for the WWW apps course.","headline":"About","name":"Chess openings","url":"http://localhost:4000/about/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Chess openings" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Chess openings</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">About</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This page is solution to first assignment for WWW apps course.
+It contains list of chess openings scraped from <a href="https://www.thechesswebsite.com/chess-openings/">this</a> page.
+For every opening there are some additional information found by duckduckgo_search library.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Chess openings</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Michał Januszkiewicz</li><li><a class="u-email" href="mailto:mj459089@students.mimuw.edu.pl">mj459089@students.mimuw.edu.pl</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>This page is the solution to the first assignment for the WWW apps course.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
 </body>
+
 </html>

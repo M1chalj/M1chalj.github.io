@@ -5,17 +5,17 @@
 </head>
 <body class="bg-[#6DC062]">
     <link rel="stylesheet" type="text/css" href="assets/css/output.css">
-    <header class="bg-[#dcf0da] sticky top-0">
+    <header class="bg-[#dcf0da] sticky top-0 z-10 select-none">
         <div class="flex flex-row justify-left bg-[#6DC062] rounded-br-4xl p-7">
             <a id="logo" class="flex-none flex flex-col justify-center" href="./index.html"><img src="assets/img/pawn.png" width="75" height="75" alt="Pawn"></a>
             <div id="title" class="flex-auto flex flex-col">
                 <h1 class="text-5xl font-bold font-serif">Welcome to the World of Chess</h1>
-                <p class="flex flex-row justify-left text ml-10">Your journey to becoming a chess master starts here!</p>
+                <p class="flex flex-row justify-left ml-10">Your journey to becoming a chess master starts here!</p>
             </div>
             <div id="menu" class="flex-none flex flex-row justify-center gap-4 items-center">
-                <a href="./about/index.html" class="flex flex-col justify-center bg-[#b0e0aa] p-2 rounded-2xl hover:bg-[#7aa075]">About</a>
-                <a href="https://m1chalj.github.io/" class="flex flex-col justify-center bg-[#b0e0aa] p-2 rounded-2xl hover:bg-[#7aa075]">Main page</a>
-                <a href="https://chess.com/" class="flex flex-col justify-center bg-[#b0e0aa] p-2 rounded-2xl hover:bg-[#7aa075]">Play chess!</a>
+                <a href="./about/index.html" class="flex flex-col justify-center menu-btn">About</a>
+                <a href="https://m1chalj.github.io/" class="flex flex-col justify-center menu-btn">Main page</a>
+                <a href="https://chess.com/" class="flex flex-col justify-center menu-btn">Play chess!</a>
             </div>
         </div>
     </header>
@@ -23,9 +23,9 @@
         <div id="left-part" class="w-40 flex-none bg-[#6DC062]">
             <div id="menu" class="sticky top-50 flex-none flex flex-col justify-center gap-4 items-center">
                 <h2 class="text-2xl font-bold">Menu:</h2>
-                <a href="./about/index.html" class="flex flex-row justify-center bg-[#b0e0aa] p-2 rounded-2xl hover:bg-[#7aa075]">About</a>
-                <a href="https://m1chalj.github.io/" class="flex flex-row justify-center bg-[#b0e0aa] p-2 rounded-2xl hover:bg-[#7aa075]">Main page</a>
-                <a href="https://chess.com/" class="flex flex-row justify-center bg-[#b0e0aa] p-2 rounded-2xl hover:bg-[#7aa075]">Play chess!</a>
+                <a href="./about/index.html" class="flex flex-row justify-center menu-btn">About</a>
+                <a href="https://m1chalj.github.io/" class="flex flex-row justify-center menu-btn">Main page</a>
+                <a href="https://chess.com/" class="flex flex-row justify-center menu-btn">Play chess!</a>
             </div>
         </div>
         <div id="mid-part" class="flex-auto flex flex-col justify-center p-5 rounded-tl-4xl bg-[#dcf0da]">
@@ -85,11 +85,11 @@
                     <p class="mb-3">The opening phase in chess sets the stage for the entire game, laying the foundation for both short-term tactics and long-term strategy. A well-executed opening helps control the center of the board, which is crucial for piece mobility and strategic dominance. By occupying key central squares, such as e4, d4, e5, and d5, players can exert influence over the board and facilitate smoother piece development. Efficient development of minor pieces—knights and bishops—is another fundamental goal of the opening, allowing for quicker coordination and preparing for potential attacks or defensive structures. Additionally, ensuring the king's safety, typically through castling, is an essential principle, as an exposed king can become an easy target for early aggression. Players who follow these principles generally enter the middlegame with a more stable and promising position.</p>
                     <p class="mb-3">There are numerous opening choices in chess, each catering to different playing styles. The most popular and widely played openings include <strong>1.e4</strong>—the <em>King's Pawn Opening</em>—and <strong>1.d4</strong>—the <em>Queen's Pawn Opening</em>—both of which aim for strong central control and rapid piece development. The <em>King's Pawn Opening</em> often leads to dynamic, tactical positions, making it a favorite among aggressive players. It paves the way for openings such as the Ruy-Lopez, Sicilian Defense, and Italian Game, which have been studied extensively for centuries. The <em>Queen's Pawn Opening</em>, on the other hand, generally results in more strategic and positional battles, offering solid setups like the Queen's Gambit, King's Indian Defense, and Grünfeld Defense. More positionally inclined players may opt for <strong>1.c4</strong>, known as the <em>English Opening</em>, which focuses on gradual central control and flexible development. Similarly, <strong>1.Nf3</strong>, the <em>Reti Opening</em>, allows for transpositional possibilities, giving players the freedom to steer the game into different types of positions based on their opponent's responses. These openings provide strong and well-tested paths to achieving a stable and advantageous position early in the game.</p>
                     <p class="mb-3">Conversely, making weak opening moves can lead to immediate disadvantages. Moves like <strong>f3</strong> or <strong>h4</strong>, while sometimes used in surprise attacks, are generally considered weak in standard play because they fail to contribute to central control and leave the king exposed. Playing <strong>f3</strong> early in the game weakens the e1-h4 diagonal, making it vulnerable to checks and attacks, while <strong>h4</strong> does little to assist in development and can waste valuable time that could be spent mobilizing key pieces. In contrast, a strong opening provides a solid foundation for the middlegame, allowing for better tactical opportunities, piece activity, and strategic planning. By choosing a well-established opening and following fundamental principles, players can gain an immediate edge, setting themselves up for a more successful and controlled game.</p>
-                    <p class="mb-3">Visit <a class="text-orange-400" href="https://m1chalj.github.io/list">this page</a> to learn about openings</p>
+                    <p class="mb-3">Visit <a class="text-orange-400 hover:underline underline-offset-3" href="https://m1chalj.github.io/list">this page</a> to learn about openings</p>
             
                 </div>
             </div>
-            <div id="chessboard-image" class="flex flex-col items-center">
+            <div id="chessboard-image" class="flex-col items-center hidden 2xl:flex">
                 <h3 class="text-2xl">Chess board</h3>
                 <img src="assets/img/chessboard.png" class="shadow-2xl shadow-emerald-500" alt="Chess board" width="720" height="720" usemap="#chessboard-map">
             </div>
@@ -117,7 +117,7 @@
             </map>
         </div>
         <div id="right-part" class="w-100 flex-none p-5 bg-[#dcf0da] border-l-5 border-l-[#6DC062] border-dotted">
-            <div id="enrollment-form" class="sticky top-50 flex flex-col items-center">
+            <div id="enrollment-form" class="sticky top-50 flex flex-col items-center z-1 max-h-[75vh] overflow-auto">
                 <h3 class="font-bold text-xl mb-3">Become Part of Our Chess Family</h3>
                 <details class="mb-5">
                     <summary class="hover:bg-[#c0e2bd] p-1">See why</summary>
@@ -149,7 +149,7 @@
                     </select>
                     <span class="relative w-10 h-10 mb-3">
                         <span class="absolute h-10 w-10 rounded-full animate-ping bg-amber-900 opacity-70"></span>
-                        <button type="submit" class="relative h-10 w-10 border bg-amber-50 rounded-full p-1 hover:bg-amber-100">Join</button>   
+                        <button type="submit" class="relative h-10 w-10 border bg-amber-50 rounded-full p-1 hover:bg-amber-100 cursor-pointer">Join</button>   
                     </span>
                 </form>
                 <div class="flex flex-row">
