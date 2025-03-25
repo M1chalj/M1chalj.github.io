@@ -391,8 +391,14 @@
   .overflow-visible {
     overflow: visible;
   }
+  .overflow-x-clip {
+    overflow-x: clip;
+  }
   .overflow-x-visible {
     overflow-x: visible;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
   }
   .overflow-y-visible {
     overflow-y: visible;
