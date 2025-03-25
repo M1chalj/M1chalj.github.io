@@ -364,6 +364,9 @@
   .flex-row {
     flex-direction: row;
   }
+  .content-center {
+    align-content: center;
+  }
   .items-center {
     align-items: center;
   }
