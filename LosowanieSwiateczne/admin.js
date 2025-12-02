@@ -9,26 +9,17 @@ const DEFAULT_NAMES = [
 function createRows(names){
   const rows = document.getElementById('rows');
   rows.innerHTML = '';
-  const table = document.createElement('table');
-  table.style.width = '100%';
-  table.style.borderCollapse = 'collapse';
   for (const name of names){
     const tr = document.createElement('div');
-    tr.style.display = 'flex';
-    tr.style.gap = '8px';
-    tr.style.marginBottom = '6px';
+    tr.className = 'pw-row';
     const label = document.createElement('div');
     label.textContent = name;
-    label.style.flex = '1';
-    label.style.padding = '8px 10px';
-    label.style.background = '#fafafa';
-    label.style.border = '1px solid #eee';
-    label.style.borderRadius = '6px';
+    label.className = 'pw-label';
 
     const input = document.createElement('input');
     input.type = 'text';
     input.placeholder = 'password for ' + name;
-    input.style.flex = '1';
+    input.className = 'pw-input';
     input.dataset.name = name;
 
     tr.appendChild(label);
