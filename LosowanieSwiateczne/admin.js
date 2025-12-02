@@ -1,74 +1,11 @@
-/* admin.js
-
-  Admin helper page for generating encrypted mapping.
-  - Paste names (one per line) or click 'Load Defaults' to prefill from NAMES in script.js (local copy).
-  - Click 'Create Rows' to create password inputs for each name.
-  - Fill passwords, then click 'Generate & Encrypt Map'.
-  - Copy the produced JSON and paste into `script.js` to set `ENCRYPTED_MAP`.
-
-  Note: This file duplicates the crypto functions from script.js for simplicity and
-  because GitHub Pages serves static files.
-*/
-
-// --- You can mirror the default names here if you want convenience ---
 const DEFAULT_NAMES = [
-  'Alice Smith',
-  'Bob Johnson',
-  'Carol White',
-  'David Green'
+  'Zosia Januszkiewicz',
+  'Alicja Januszkiewicz',
+  'Michał Januszkiewicz',
+  'Katarzyna Januszkiewicz',
+  'Robert Januszkiewicz'
 ];
 
-const enc = new TextEncoder();
-const dec = new TextDecoder();
-
-function bufToBase64(buf){
-  const bytes = new Uint8Array(buf);
-  let str = '';
-  for (let i=0;i<bytes.length;i++) str += String.fromCharCode(bytes[i]);
-  return btoa(str);
-}
-
-function base64ToBuf(b64){
-  const str = atob(b64);
-  const buf = new Uint8Array(str.length);
-  for (let i=0;i<str.length;i++) buf[i] = str.charCodeAt(i);
-  return buf.buffer;
-}
-
-async function deriveKey(name, password){
-  const salt = enc.encode(name);
-  const pwKey = await crypto.subtle.importKey('raw', enc.encode(password), {name:'PBKDF2'}, false, ['deriveKey']);
-  const key = await crypto.subtle.deriveKey(
-    {name:'PBKDF2', salt, iterations:150000, hash:'SHA-256'},
-    pwKey,
-    {name:'AES-GCM', length:256},
-    false,
-    ['encrypt','decrypt']
-  );
-  return key;
-}
-
-async function encryptText(plain, name, password){
-  const key = await deriveKey(name, password);
-  const iv = crypto.getRandomValues(new Uint8Array(12));
-  const ct = await crypto.subtle.encrypt({name:'AES-GCM', iv}, key, enc.encode(plain));
-  return { iv: bufToBase64(iv.buffer), ct: bufToBase64(ct) };
-}
-
-function makeSingleCycle(names){
-  const a = names.slice();
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  const map = {};
-  for (let i=0;i<a.length;i++){
-    map[a[i]] = a[(i+1)%a.length];
-  }
-  return {order:a, map};
-}
-
-// --- DOM helpers ---
 function createRows(names){
   const rows = document.getElementById('rows');
   rows.innerHTML = '';
@@ -139,11 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (names.length === 0){ return alert('No names/rows found. Click Create Rows first.'); }
 
-    const {order, map} = makeSingleCycle(names);
+    const {order, map} = LSCommon.makeSingleCycle(names);
     const encrypted = {};
     for (const giver of names){
       const recipient = map[giver];
-      const encObj = await encryptText(recipient, giver, pwMap[giver]);
+      const encObj = await LSCommon.encryptText(recipient, giver, pwMap[giver]);
       encrypted[giver] = encObj;
     }
 
