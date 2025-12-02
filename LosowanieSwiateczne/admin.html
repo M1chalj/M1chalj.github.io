@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - Christmas Lottery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Admin — Generate Encrypted Assignments</h1>
+
+    <section class="card small">
+      <p class="muted">Provide the participant names (one per line), then click <strong>Create Rows</strong>. Fill each participant's chosen password in the table. Click <strong>Generate & Encrypt Map</strong> to produce a ready-to-paste mapping for `script.js`.</p>
+
+      <label for="namesArea">Names (one per line)</label>
+      <textarea id="namesArea" rows="6" placeholder="Alice Smith\nBob Johnson\nCarol White"></textarea>
+
+      <div style="margin-top:12px">
+        <button id="createRowsBtn">Create Rows</button>
+        <button id="loadDefaultsBtn">Load Defaults</button>
+      </div>
+
+      <form id="pwForm" onsubmit="return false;" style="margin-top:12px">
+        <div id="rows"></div>
+      </form>
+
+      <div style="margin-top:12px">
+        <button id="generateBtn">Generate & Encrypt Map</button>
+        <button id="copyBtn">Copy to Clipboard</button>
+        <a id="downloadLink" style="display:inline-block;margin-left:8px"></a>
+      </div>
+
+      <label for="outJson">Encrypted Mapping (paste into `script.js`)</label>
+      <textarea id="outJson" rows="8" readonly></textarea>
+    </section>
+
+    <p class="muted">Back to <a href="index.html">User Page</a>.</p>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

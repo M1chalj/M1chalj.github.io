@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Świąteczne Losowanie Prezentów</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Świąteczne Losowanie Prezentów</h1>
+
+    <section class="card">
+      <label for="fullname">Twoje pełne imię i nazwisko</label>
+      <input id="fullname" type="text" placeholder="np. Alicja Kowalska" autocomplete="name" />
+
+      <label for="password">Twoje hasło</label>
+      <input id="password" type="password" placeholder="Twoje tajne hasło" />
+      <button id="revealBtn">Sprawdź komu dajesz prezent!</button>
+
+      <div id="result" class="result" aria-live="polite"></div>
+    </section>
+
+    
+
+    <footer class="foot">Vibecoded by Michał Januszkiewicz</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
