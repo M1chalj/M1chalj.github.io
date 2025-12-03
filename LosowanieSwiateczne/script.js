@@ -83,4 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
       resultEl.textContent = 'Niepoprawne hasło lub uszkodzone dane. Spróbuj ponownie.';
     }
   });
+
+  pwEl.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      revealBtn.click();
+    }
+  });
 });
