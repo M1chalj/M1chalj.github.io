@@ -46,7 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Password generation wordlist (Polish Christmas words)
-  const PW_WORDS = ['Mikolaj','Snieg','Balwan','Gwiazdka','Choinka'];
+  const PW_WORDS = [
+    'Mikolaj','Snieg','Balwan','Gwiazdka','Choinka',
+    'Prezent','Kolenda','Oplatek','Aniol','Bombka',
+    'Dzwonek','Sanie','Piernik','Wigilia','Cukierek'
+  ];
 
   function randInt(max){ return Math.floor(Math.random()*max); }
 
