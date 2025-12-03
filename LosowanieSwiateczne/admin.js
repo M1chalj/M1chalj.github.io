@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const namesArea = document.getElementById('namesArea');
   const createRowsBtn = document.getElementById('createRowsBtn');
   const generateBtn = document.getElementById('generateBtn');
+  const generatePwBtn = document.getElementById('generatePwBtn');
+  const downloadPwBtn = document.getElementById('downloadPwBtn');
   const outJson = document.getElementById('outJson');
   const copyBtn = document.getElementById('copyBtn');
 
@@ -41,6 +43,61 @@ document.addEventListener('DOMContentLoaded', () => {
     const names = namesArea.value.split('\n').map(s=>s.trim()).filter(Boolean);
     if (names.length === 0) return alert('Provide at least one name');
     createRows(names);
+  });
+
+  // Password generation wordlist (Polish Christmas words)
+  const PW_WORDS = ['Mikolaj','Snieg','Balwan','Gwiazdka','Choinka'];
+
+  function randInt(max){ return Math.floor(Math.random()*max); }
+
+  function genPassword(){
+    // pick two words (may be same) and append a random 3-digit number
+    const w1 = PW_WORDS[randInt(PW_WORDS.length)];
+    const w2 = PW_WORDS[randInt(PW_WORDS.length)];
+    return w1 + w2;
+  }
+
+  generatePwBtn.addEventListener('click', () => {
+    let rows = document.getElementById('rows');
+    let inputs = rows.querySelectorAll('input[data-name]');
+    if (!inputs || inputs.length === 0){
+      return alert('No names provided - use Create Rows first.');
+    }
+
+    const generated = [];
+    for (const inp of inputs){
+      const pw = genPassword();
+      inp.value = pw;
+      generated.push({name: inp.dataset.name, password: pw});
+    }
+
+    downloadPwBtn.disabled = false;
+    downloadPwBtn._generated = generated;
+  });
+
+  downloadPwBtn.addEventListener('click', () => {
+    const generated = downloadPwBtn._generated;
+    if (!generated || generated.length === 0) return alert('No generated passwords to download. Click Generate Passwords first.');
+
+    function escapeCsvField(s){
+      if (s == null) return '';
+      const str = String(s).replace(/"/g,'""');
+      return '"' + str + '"';
+    }
+
+    const lines = ['"name","password"'];
+    for (const row of generated) lines.push(escapeCsvField(row.name) + ',' + escapeCsvField(row.password));
+    const csv = lines.join('\n');
+
+    const blob = new Blob([csv], {type: 'text/csv;charset=utf-8;'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'passwords.csv';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
   });
 
   generateBtn.addEventListener('click', async () => {
