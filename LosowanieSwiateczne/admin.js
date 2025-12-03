@@ -31,11 +31,9 @@ function createRows(names){
 document.addEventListener('DOMContentLoaded', () => {
   const namesArea = document.getElementById('namesArea');
   const createRowsBtn = document.getElementById('createRowsBtn');
-  const loadDefaultsBtn = document.getElementById('loadDefaultsBtn');
   const generateBtn = document.getElementById('generateBtn');
   const outJson = document.getElementById('outJson');
   const copyBtn = document.getElementById('copyBtn');
-  const downloadLink = document.getElementById('downloadLink');
 
   // Prefill names area with defaults
   namesArea.value = DEFAULT_NAMES.join('\n');
@@ -46,10 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     createRows(names);
   });
 
-  loadDefaultsBtn.addEventListener('click', () => {
-    namesArea.value = DEFAULT_NAMES.join('\n');
-    createRows(DEFAULT_NAMES);
-  });
+  // "Load Defaults" button removed — defaults still prefilled on load
 
   generateBtn.addEventListener('click', async () => {
     // collect names and passwords from rows
@@ -80,9 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // create copy-ready snippet to paste into script.js
     const snippet = 'const ENCRYPTED_MAP = ' + pretty + ';';
-    downloadLink.textContent = 'Download mapping.js';
-    downloadLink.href = URL.createObjectURL(new Blob([snippet], {type:'application/javascript'}));
-    downloadLink.download = 'mapping.js';
+    // Download link removed — user can copy JSON or use the "Download mapping.js" link generated previously
   });
 
   copyBtn.addEventListener('click', async () => {
