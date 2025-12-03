@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const outJson = document.getElementById('outJson');
   const copyBtn = document.getElementById('copyBtn');
 
-  // Prefill names area with defaults
   namesArea.value = DEFAULT_NAMES.join('\n');
 
   createRowsBtn.addEventListener('click', () => {
@@ -44,10 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     createRows(names);
   });
 
-  // "Load Defaults" button removed — defaults still prefilled on load
-
   generateBtn.addEventListener('click', async () => {
-    // collect names and passwords from rows
     const rows = document.getElementById('rows');
     const inputs = rows.querySelectorAll('input[data-name]');
     const names = [];
@@ -71,11 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const pretty = JSON.stringify(encrypted, null, 2);
-    outJson.value = pretty;
-
-    // create copy-ready snippet to paste into script.js
     const snippet = 'const ENCRYPTED_MAP = ' + pretty + ';';
-    // Download link removed — user can copy JSON or use the "Download mapping.js" link generated previously
+    outJson.value = snippet;
   });
 
   copyBtn.addEventListener('click', async () => {
@@ -83,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!out) return alert('Nothing to copy');
     try{
       await navigator.clipboard.writeText(out);
-      alert('Copied encrypted mapping to clipboard (JSON only).');
     }catch(e){
       alert('Copy failed — select and copy manually.');
     }
