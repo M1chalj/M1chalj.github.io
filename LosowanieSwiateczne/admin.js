@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
     createRows(names);
   });
 
-  // Password generation wordlist (Polish Christmas words)
   const PW_WORDS = [
     'Mikolaj','Snieg','Balwan','Gwiazdka','Choinka',
     'Prezent','Kolenda','Oplatek','Aniol','Bombka',
@@ -55,10 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function randInt(max){ return Math.floor(Math.random()*max); }
 
   function genPassword(){
-    // pick two words (may be same) and append a random 3-digit number
     const w1 = PW_WORDS[randInt(PW_WORDS.length)];
     const w2 = PW_WORDS[randInt(PW_WORDS.length)];
-    return w1 + w2;
+    const num = String(randInt(1000)).padStart(3,'0');
+    return w1 + w2 + num;
   }
 
   generatePwBtn.addEventListener('click', () => {
