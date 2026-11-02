@@ -1,59 +1,39 @@
 const ENCRYPTED_MAP = {
   "Marta": {
-    "iv": "Z/sg9eaG7VM7sCZL",
-    "ct": "oHNnSDzeEJ2LGqC2t3+kGRpGKA=="
+    "iv": "LZBDhcQpk/nPxIbl",
+    "ct": "Jz84axJDo9gfJBgGFRjw8oi5RoNI"
   },
   "Hania": {
-    "iv": "JjooJaCiD7SKKCdB",
-    "ct": "eRRObzjshVJ5iZACpdyiIR9k8QA1"
+    "iv": "aL33yinQeCdoSHwu",
+    "ct": "O7GhYo/EvZBZZyjtTxT/SdCk0d0="
   },
   "Ania": {
-    "iv": "4TlnYAGXOjOGxef2",
-    "ct": "6tutFVGMy6/AfeOjhIvmWIJ9stXN"
+    "iv": "6do0V+jn3oX7PUGt",
+    "ct": "QEhQ2VRepB4MahuY/ejCQl01f6TL1gqmHw=="
   },
   "Piotrek": {
-    "iv": "T3LYP8YD1AqkbDbj",
-    "ct": "tH9zZy/6vHh7n+0u++KDxHZ3aizy+A=="
-  },
-  "Ola": {
-    "iv": "GIyrn/F+NBN89eT6",
-    "ct": "/+4xUsQx2BdhSUD14eey3tfGFu4="
-  },
-  "Janusz": {
-    "iv": "dSI/OYWQrCxlnC+e",
-    "ct": "i4hkDzshAEFdmA/5NoZH6ATDB1940G7U5kk="
-  },
-  "Artur": {
-    "iv": "jviAFRMWUtMePFwc",
-    "ct": "BswYVRGZCR2MIVozz/gl363f2hRgIRM="
+    "iv": "coFYoKRJB4YWSe63",
+    "ct": "zDDdCor5Oyk8/jIr8k99JzMZfSUE"
   },
   "Agnieszka": {
-    "iv": "2sRKkQKjSkr1Kwoa",
-    "ct": "a1lDHcdAbXj2oBgo3b/+QbldjoxBUXo="
+    "iv": "tJ3eRox3SFi/KOcv",
+    "ct": "lwXzjle8Rr6mNNbyGFkgAythwUF07Xo="
   },
-  "Łukasz": {
-    "iv": "hiuQt7DV94cOYkIy",
-    "ct": "dbH69gmAn+VpsxAsr0hIUMwDGFwU"
+  "Artur": {
+    "iv": "TIvZ/9yKjO2t+wNd",
+    "ct": "dSHJcCxFCVCXmKn27fIGMhAizHXR"
   },
-  "Magda": {
-    "iv": "U5BDNyDibqUguZK4",
-    "ct": "xSWJHC42Fe5cgcUqScYAAduhO1pKS69Ufg=="
+  "Ola": {
+    "iv": "qw8ZAmbPC/nqt8dy",
+    "ct": "40DnfAhps+ut10pE7bQls2ybAhcz"
   },
-  "Ignaś": {
-    "iv": "eRnarLY1lBRQyk6H",
-    "ct": "KXB5PzXEO+Tc5I87b+ETkr3+QR6pSA=="
-  },
-  "Basia": {
-    "iv": "mp2v+ILvS+uryeHH",
-    "ct": "V6M0Qr4rPbeRCeEv1FEIo9tA+P3U"
+  "Janusz": {
+    "iv": "nfacjSNbxLDf/Spb",
+    "ct": "G7PCOwUNOr45bqgutwZtOP5YqA=="
   },
   "Zosia": {
-    "iv": "QZ1SLPT+q0diZUFY",
-    "ct": "Ok4F7H66/C8CtEqIMcKXclACFUiU"
-  },
-  "Stanisław": {
-    "iv": "q+AylcfGMX5CdJTJ",
-    "ct": "gN4SythpBreP8HLjKDGwkI3uujGA"
+    "iv": "YYOyhnTpRt2OLyIC",
+    "ct": "7cWXXvKIL0V1ik3JESTFvJtyA5deSw=="
   }
 };
 
