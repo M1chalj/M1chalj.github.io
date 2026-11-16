@@ -1,63 +1,63 @@
 const ENCRYPTED_MAP = {
-  "Babcia Anusia": {
-    "iv": "+x3Nx5WAP15O2PXX",
-    "ct": "EdXMuN6bSv0zm7lbxUcTJDKUNnfE8EJbYdgoQdoPqqBY6EYU"
+  "Babcia": {
+    "iv": "zGOpPa0ypSBloA3s",
+    "ct": "bqSKOovyNWZ5Br8OU44mr98jpgrl"
   },
-  "Ala Podgórska": {
-    "iv": "rsD0W1LanHL1AYjE",
-    "ct": "E49tu7hb1ApPnTGH+Y5vKK/HHmLqE77J87zYoscr3dq2"
+  "Ala": {
+    "iv": "01+9nQlJaWqIyB0G",
+    "ct": "BTDTybRli51ZosgayXz7Ia7KzADrTfBuFRf/LP03Sg=="
   },
-  "Teresa Przybyła": {
-    "iv": "rYvZFVE/Dr4++1n+",
-    "ct": "2pZ5QaSN3QTh/C48XVkQjHeu4mi9hp1uDIdL4m+HUqFa"
+  "Teresa": {
+    "iv": "n3U3ZI4lQLdIuDa6",
+    "ct": "5ujBczKs46H/+qiLhQfIKmMXlS1/qYg5VrVSvdgr1bDk2zs="
   },
-  "Lucjan Przybyła": {
-    "iv": "/A57Fnj3lNyBn4tQ",
-    "ct": "ZLVA6GYC7X1tc3D5AP3kPtXjnp68w0o64etFCUo="
+  "Lucek": {
+    "iv": "ioI7hoDum3mRSd09",
+    "ct": "WNqxthYSA1Qz3rU0zopSIEgwkVDv/PA="
   },
-  "Tomek Przybyła": {
-    "iv": "FIww71Hi5L99S6oj",
-    "ct": "NmwLdgQO+I8wxvbXilu/pDaNnW7nFMQkJD8gs0b5cnU="
+  "Marysia": {
+    "iv": "XNoeR0NQTBStRJ1G",
+    "ct": "wTHgFk6CpPr0PlIQIDpE+se6Vw=="
   },
-  "Paulina Przybyła": {
-    "iv": "JniGcceXl4w8e9cX",
-    "ct": "SfcVytN7FGekjXxKV40bUF0YJPLC+HG+Qe1JcIkXbb849tY="
+  "Krzysiu": {
+    "iv": "E/va0XIEhgWxA2xp",
+    "ct": "SXX9mw2hF4PQyxDw2Wd/tbYeJuaj"
   },
-  "Łukasz Przybyła": {
-    "iv": "KFWBisjdPSNRK8nH",
-    "ct": "mXYuo7A7ULyE4g1gHMJLLFo/TXEsNUOiWRyG7hmA"
+  "Tomek": {
+    "iv": "lEx0htLBcGRnXbJl",
+    "ct": "gne/qSDlyddCLuN6+Hzjz/vuTLAeJw=="
+  },
+  "Paulina": {
+    "iv": "QpQVYqum/w0+wVCQ",
+    "ct": "v5LB+6Jx+aer5V1GdUOaxSbh8015TA=="
+  },
+  "Łukasz": {
+    "iv": "n8834F/wovNWrOQN",
+    "ct": "hxBh5XMonu+1nDIo/LOxd5NPRQdhbnI="
   },
   "Kasia Przybyła": {
-    "iv": "GhRnN2PHp7oig0XJ",
-    "ct": "SwOFCPeEq3kr2a5qJYj38Sw1ecSpponsRvvd813iQo8="
-  },
-  "Marysia Zysiek": {
-    "iv": "jmZR0muoaYHpUeWE",
-    "ct": "FZCM4+Ve2Eg7hBA0gKSBhaSr2RrZkeDVAdhO/4pH6OHA3ZQ="
-  },
-  "Krzysiu Zysiek": {
-    "iv": "FhVsgtpikNKSPR34",
-    "ct": "g0LrvzW056mPapVVmTfArWvcLAL3+AB3zZ9a27kJ9X3u43NiHQ=="
+    "iv": "AeKaIacsmmuVhQNH",
+    "ct": "xciGUba749Mj+Le7wNSIjCVq9786Og=="
   },
   "Kasia Januszkiewicz": {
-    "iv": "umptZMaKIXdWp4Em",
-    "ct": "aiJa7nbIG1KGyo3ZKoRFdYoOvXhbn+ZWhDIw4JfYnw=="
+    "iv": "jVpZKO8FJ4idNmlW",
+    "ct": "9ADuxLkp4VaOcwzanaUIwWQoScsZMT0="
   },
-  "Robert Januszkiewicz": {
-    "iv": "9Ws8dpozCgMu4m/N",
-    "ct": "/FW5/epCCkXDCvlPMHs4n5Ejx7M8g2rMM7GtL7ul28jEKgY1"
+  "Robert": {
+    "iv": "t5oqHa/fSfXE/BHp",
+    "ct": "+7glg1+4yISZmFUXA9vBCf/rmyo7iMI="
   },
-  "Michał Januszkiewicz": {
-    "iv": "nBJCTVNn5TpSVCC9",
-    "ct": "h0yHnDHlZzOgJhatMKN233+zXqYDOqMOTPKzqGlulw=="
+  "Michał": {
+    "iv": "0zDc0iAXW/zzqr2I",
+    "ct": "Li3Z6hKHrhUVMxWR+XYsr0BaP8gFlw=="
   },
-  "Alicja Januszkiewicz": {
-    "iv": "mJGlaKYfEe+LLTIl",
-    "ct": "FLcx//v9ulevvDnmiCRndeXa9sQknhPEnRoICMG8"
+  "Alicja": {
+    "iv": "AXqxGQqhgQO1qgkq",
+    "ct": "E8ojgdC33YKyFJ63/17NBQFVBoOU"
   },
-  "Zosia Januszkiewicz": {
-    "iv": "2o11gsQFjzmzHz0a",
-    "ct": "dZyCQY6ut8CFT8+Ng6fH9OMRVASj4H6hC5Uj8pBY"
+  "Zosia": {
+    "iv": "q8JATodRdgg8tDle",
+    "ct": "gijD38MMaE3H6mC1Fqs/zmHLwK4lQeA="
   }
 };
 
